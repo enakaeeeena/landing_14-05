@@ -1,0 +1,1479 @@
+[
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "AddAdmin",
+    "RelativePath": "api/Admins/AddAdmin/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "AddProgramAdmin",
+    "RelativePath": "api/Admins/AddProgramAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddProgramAdminRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "GetAdmins",
+    "RelativePath": "api/Admins/GetAdmins",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.UserResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Admins/GetUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetUsersRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.GetUsersResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "RemoveAdmin",
+    "RelativePath": "api/Admins/RemoveAdmin/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AdminsController",
+    "Method": "RemoveProgramAdmin",
+    "RelativePath": "api/Admins/RemoveProgramAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveProgramAdminRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/auth/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/auth/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "Confirm",
+    "RelativePath": "api/auth/confirm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ConfirmCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "Profile",
+    "RelativePath": "api/auth/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "ResendCode",
+    "RelativePath": "api/auth/resend-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.AuthController",
+    "Method": "StartRegistration",
+    "RelativePath": "api/auth/start-register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "GetBlocks",
+    "RelativePath": "api/Blocks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[lending_skills_backend.Models.DbBlock, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "CreateBlock",
+    "RelativePath": "api/Blocks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.CreateBlockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Models.DbBlock",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "UpdateBlocks",
+    "RelativePath": "api/Blocks",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "blocks",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[lending_skills_backend.Models.DbBlock, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "GetBlock",
+    "RelativePath": "api/Blocks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Models.DbBlock",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "UpdateBlock",
+    "RelativePath": "api/Blocks/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.EditBlockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Models.DbBlock",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "DeleteBlock",
+    "RelativePath": "api/Blocks/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.BlocksController",
+    "Method": "ChangeBlockPosition",
+    "RelativePath": "api/Blocks/ChangePosition",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ChangeBlockPositionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.EmailController",
+    "Method": "Send",
+    "RelativePath": "api/email/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.EmailController",
+    "Method": "Verify",
+    "RelativePath": "api/email/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Controllers.EmailCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "AddForm",
+    "RelativePath": "api/Forms/AddForm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.FormRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.FormResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "GetForms",
+    "RelativePath": "api/Forms/GetForms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetFormsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.FormsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "HideForm",
+    "RelativePath": "api/Forms/HideForm/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "HideForms",
+    "RelativePath": "api/Forms/HideForms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.HideFormsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "RemoveForm",
+    "RelativePath": "api/Forms/RemoveForm/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "RemoveForms",
+    "RelativePath": "api/Forms/RemoveForms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveFormsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "ShowForm",
+    "RelativePath": "api/Forms/ShowForm/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.FormsController",
+    "Method": "ShowForms",
+    "RelativePath": "api/Forms/ShowForms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ShowFormsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "AddProfessor",
+    "RelativePath": "api/Professors/AddProfessor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddProfessorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProfessorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "AddProfessorToProgram",
+    "RelativePath": "api/Professors/AddProfessorToProgram",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddProfessorToProgramRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "ChangeProfessorProgramPosition",
+    "RelativePath": "api/Professors/ChangeProfessorProgramPosition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ChangeProfessorProgramPositionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "GetProfessors",
+    "RelativePath": "api/Professors/GetProfessors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetProfessorsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProfessorsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "RemoveProfessorFromProgram",
+    "RelativePath": "api/Professors/RemoveProfessorFromProgram",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveProfessorFromProgramRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProfessorsController",
+    "Method": "UpdateProfessor",
+    "RelativePath": "api/Professors/UpdateProfessor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateProfessorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "AddBlockToPage",
+    "RelativePath": "api/ProgramPages/AddBlockToPage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddBlockToPageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.BlockResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "AddProgram",
+    "RelativePath": "api/ProgramPages/AddProgram",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddProgramRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProgramResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "ChangeBlockPosition",
+    "RelativePath": "api/ProgramPages/ChangeBlockPosition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ChangeBlockPositionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "DeleteProgram",
+    "RelativePath": "api/ProgramPages/DeleteProgram/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "EditBlock",
+    "RelativePath": "api/ProgramPages/EditBlock",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.EditBlockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "EditProgram",
+    "RelativePath": "api/ProgramPages/EditProgram",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.EditProgramRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "GetPage",
+    "RelativePath": "api/ProgramPages/GetPage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetPageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProgramResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "GetProgramMainPage",
+    "RelativePath": "api/ProgramPages/GetProgramMainPage/{programId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProgramResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ProgramPagesController",
+    "Method": "RemoveBlock",
+    "RelativePath": "api/ProgramPages/RemoveBlock/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.PasswordResetController",
+    "Method": "ConfirmReset",
+    "RelativePath": "api/reset/confirm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.PasswordResetConfirmRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.PasswordResetController",
+    "Method": "RequestReset",
+    "RelativePath": "api/reset/request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.EmailOnlyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ReviewsController",
+    "Method": "AddReview",
+    "RelativePath": "api/Reviews/AddReview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddReviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ReviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ReviewsController",
+    "Method": "GetReviews",
+    "RelativePath": "api/Reviews/GetReviews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetReviewsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.ReviewResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.ReviewsController",
+    "Method": "UpdateStudentReviews",
+    "RelativePath": "api/Reviews/UpdateStudentReviews",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateStudentReviewsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "AddSkill",
+    "RelativePath": "api/Skills/AddSkill",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddSkillRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.SkillResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "AddSkillToUser",
+    "RelativePath": "api/Skills/AddSkillToUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddSkillToUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "AddSkillToWork",
+    "RelativePath": "api/Skills/AddSkillToWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddSkillToWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "GetSkills",
+    "RelativePath": "api/Skills/GetSkills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.SkillResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "RemoveSkill",
+    "RelativePath": "api/Skills/RemoveSkill",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveSkillRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "RemoveSkillFromUser",
+    "RelativePath": "api/Skills/RemoveSkillFromUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveSkillFromUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "RemoveSkillFromWork",
+    "RelativePath": "api/Skills/RemoveSkillFromWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveSkillFromWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.SkillsController",
+    "Method": "UpdateSkill",
+    "RelativePath": "api/Skills/UpdateSkill",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateSkillRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "AddTag",
+    "RelativePath": "api/Tags/AddTag",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.TagResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "AddTagToWork",
+    "RelativePath": "api/Tags/AddTagToWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddTagToWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "GetTags",
+    "RelativePath": "api/Tags/GetTags",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.TagResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "RemoveTag",
+    "RelativePath": "api/Tags/RemoveTag",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "RemoveTagFromWork",
+    "RelativePath": "api/Tags/RemoveTagFromWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.RemoveTagFromWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.TagsController",
+    "Method": "UpdateTag",
+    "RelativePath": "api/Tags/UpdateTag",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "CreateStudentProfile",
+    "RelativePath": "api/Users/CreateStudentProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.CreateStudentProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProfileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "DeleteProfile",
+    "RelativePath": "api/Users/DeleteProfile/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Users/GetProfile/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.ProfileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "GetProfiles",
+    "RelativePath": "api/Users/GetProfiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetProfilesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.ProfileResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "HideProfile",
+    "RelativePath": "api/Users/HideProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.HideProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "ShowProfile",
+    "RelativePath": "api/Users/ShowProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ShowProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.UsersController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Users/UpdateProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "AddWork",
+    "RelativePath": "api/Works/AddWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.AddWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "lending_skills_backend.Dtos.Responses.WorkResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "GetWorks",
+    "RelativePath": "api/Works/GetWorks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.GetWorksRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[lending_skills_backend.Dtos.Responses.WorkResponse, lending_skills_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "HideWork",
+    "RelativePath": "api/Works/HideWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.HideWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "LikeWork",
+    "RelativePath": "api/Works/LikeWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.LikeWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "ShowWork",
+    "RelativePath": "api/Works/ShowWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.ShowWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "UnlikeWork",
+    "RelativePath": "api/Works/UnlikeWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UnlikeWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.WorksController",
+    "Method": "UpdateWork",
+    "RelativePath": "api/Works/UpdateWork",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "lending_skills_backend.Dtos.Requests.UpdateWorkRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "lending_skills_backend.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

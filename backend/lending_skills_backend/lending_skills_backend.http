@@ -1,0 +1,6 @@
+@lending_skills_backend_HostAddress = http://localhost:5218
+
+GET {{lending_skills_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
