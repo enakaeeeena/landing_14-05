@@ -1,0 +1,74 @@
+/* Global responsive styles */
+:root {
+  --content-padding: 0.75rem;
+  --content-padding-md: 1.5rem;
+  --content-padding-lg: 2.5rem;
+  --content-padding-xl: 3.5rem;
+}
+
+/* Base container styles */
+.container {
+  width: 100%;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--content-padding-md);
+    padding-right: var(--content-padding-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--content-padding-lg);
+    padding-right: var(--content-padding-lg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: var(--content-padding-xl);
+    padding-right: var(--content-padding-xl);
+  }
+}
+
+/* Responsive typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-left md:text-center;
+}
+
+h1 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+}
+
+h2 {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+}
+
+h3 {
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-left;
+  }
+}
+
+/* Consistent block spacing */
+.block {
+  @apply py-6 md:py-8 lg:py-10;
+}
+
+/* Consistent header spacing */
+.header {
+  @apply py-3 md:py-4 lg:py-5;
+} 

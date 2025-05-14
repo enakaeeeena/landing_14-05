@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* В ваш CSS файл */
+.mobile-menu-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+@layer base {
+  @font-face {
+    font-family: 'YFF Rare';
+    src: url('/fonts/YFF RARE VF TRIAL.woff2') format('woff2');
+    font-weight: 100  900; 
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'YFF Rare';
+    src: 
+      url('/fonts/YFFRARETRIAL-PowerBold.woff2') format('woff2'),
+      url('/fonts/YFFRARETRIAL-PowerBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'YFF Rare';
+    src: 
+      url('/fonts/YFFRARETRIAL-HyperRegular.woff2') format('woff2'),
+      url('/fonts/YFFRARETRIAL-HyperRegular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  body {
+    @apply bg-background text-text;
+    font-family: 'YFF Rare', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+
+  
+  
+}
+@layer components {
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 1.5rem; 
+  }
+  
+
+  .header-nav-link {
+    @apply text-xl py-1 whitespace-nowrap border-b-2 border-transparent hover:border-black transition-colors;
+  }
+  
+  .heading-1 {
+    @apply text-4xl md:text-6xl xl:text-[90px] font-bold; 
+  }
+  
+
+  .heading-2 {
+    @apply text-4xl md:text-6xl xl:text-[50px] font-bold;
+  }
+
+  .heading-3 {
+    @apply text-4xl md:text-6xl xl:text-[30px] font-bold;
+  }
+
+  .body-text {
+    @apply text-4xl md:text-6xl xl:text-[30px] font-normal;
+  }
+
+  .btn {
+    @apply border-[5px] border-black px-6 py-3 text-[30px] font-normal;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    @apply bg-primary text-white border-primary;
+  }
+
+  .header-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header-nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
