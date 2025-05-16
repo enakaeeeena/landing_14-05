@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './Components/Header';
 import LandingPage from './pages/Main/LandingPage';
@@ -36,39 +36,37 @@ function App() {
   });
 
   return (
-    <BrowserRouter {...router}>
-      <AdminProvider>
-        <div className="min-h-screen flex flex-col">
-          <Header links={headerLinks} setHeaderLinks={setHeaderLinks} />
-          <main className="flex-grow">
-            <div className="main-container py-8">
-              <Routes>
-                {/* Skills Passport Routes */}
-                <Route path="/skills" element={<AuthPage />} />
-                <Route path="/skills/profile" element={<ProfileView />} />
-                <Route path="/skills/profile/:id" element={<ProfileView />} />
-                <Route path="/skills/dashboard" element={<SkillsDashboard />} />
-                <Route path="/skills/block" element={<SkillsBlock />} />
+    <AdminProvider>
+      <div className="min-h-screen flex flex-col">
+        <Header links={headerLinks} setHeaderLinks={setHeaderLinks} />
+        <main className="flex-grow">
+          <div className="main-container py-8">
+            <Routes>
+              {/* Skills Passport Routes */}
+              <Route path="/skills" element={<AuthPage />} />
+              <Route path="/skills/profile" element={<ProfileView />} />
+              <Route path="/skills/profile/:id" element={<ProfileView />} />
+              <Route path="/skills/dashboard" element={<SkillsDashboard />} />
+              <Route path="/skills/block" element={<SkillsBlock />} />
 
-                {/* Main Routes */}
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/professors" element={<ProfessorsPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
+              {/* Main Routes */}
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/professors" element={<ProfessorsPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
 
-                {/* Admin Routes */}
-                <Route path="/admin/login" element={<AdminLogin />} />
-                <Route path="/admin" element={<AdminPanel headerLinks={headerLinks} setHeaderLinks={setHeaderLinks} />}>
-                  <Route path="gallery" element={<GalleryPage />} />
-                  <Route path="reviews" element={<ReviewsPage />} />
-                </Route>
-              </Routes>
-            </div>
-          </main>
-        </div>
+              {/* Admin Routes */}
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin" element={<AdminPanel headerLinks={headerLinks} setHeaderLinks={setHeaderLinks} />}>
+                <Route path="gallery" element={<GalleryPage />} />
+                <Route path="reviews" element={<ReviewsPage />} />
+              </Route>
+            </Routes>
+          </div>
+        </main>
 
         <ConnectionTest />
-      </AdminProvider>
-    </BrowserRouter>
+      </div>
+    </AdminProvider>
   );
 }
 
