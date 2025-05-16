@@ -46,7 +46,7 @@ const Header = ({ links, setHeaderLinks }) => {
   }, [location]);
 
   return (
-    <header className="w-full border-t-4 border-b-4 border-black">
+    <header className="fixed top-0 left-0 w-full bg-white z-50 border-t-4 border-b-4 border-black shadow-md">
       <nav className="w-full min-h-[6rem] flex items-center justify-between px-4 md:px-[100px] py-2 relative">
         <button 
           className="md:hidden p-2 text-2xl"

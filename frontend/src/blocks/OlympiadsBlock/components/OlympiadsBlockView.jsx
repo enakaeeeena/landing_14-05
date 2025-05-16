@@ -11,7 +11,7 @@ const OlympiadsBlockView = ({ content = {}, onEdit }) => {
           <div className="text-[40px] font-bold leading-none mt-1">{title2}</div>
         </div>
       </div>
-      <div className="border-3 border-black p-4 mb-8 max-h-48 overflow-y-auto bg-white">
+      <div className=" olympiad-scroll border-3 border-black p-4 mb-8 max-h-48 overflow-y-auto bg-white">
         {items.length === 0 ? (
           <div className="text-gray-400 text-lg">Нет добавленных олимпиад</div>
         ) : (

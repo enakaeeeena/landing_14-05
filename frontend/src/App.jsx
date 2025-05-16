@@ -59,7 +59,7 @@ function App() {
     <AdminProvider>
       <div className="min-h-screen flex flex-col">
         <Header links={headerLinks} setHeaderLinks={setHeaderLinks} />
-        <main className="flex-grow">
+        <main className="flex-grow pt-[6rem]">
           <div className="main-container py-8">
             <Routes>
               {/* Skills Passport Routes */}
