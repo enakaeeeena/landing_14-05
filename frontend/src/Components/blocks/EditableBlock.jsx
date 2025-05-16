@@ -15,6 +15,12 @@ import GalleryBlockView from '../../blocks/GalleryBlock/components/GalleryBlockV
 import { GalleryEditor } from '../../blocks/GalleryBlock/components/GalleryEditor';
 import { AdmissionEditor } from '../../blocks/Admission/components/AdmissionEditor';
 import AdmissionBlockView from '../../blocks/Admission/components/AdmissionBlockView';
+import MinScoresBlock from '../../blocks/MinScoresBlock/MinScoresBlock';
+import MinScoresBlockEditor from '../../blocks/MinScoresBlock/components/MinScoresBlockEditor';
+import MinScoresBlockView from '../../blocks/MinScoresBlock/components/MinScoresBlockView';
+import PassScoresBlock from '../../blocks/PassScoresBlock/PassScoresBlock';
+import PassScoresBlockEditor from '../../blocks/PassScoresBlock/components/PassScoresBlockEditor';
+import PassScoresBlockView from '../../blocks/PassScoresBlock/components/PassScoresBlockView';
 
 function safeParse(str) {
   try {
@@ -73,6 +79,27 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
       title: '',
       description: '',
       requirements: []
+    },
+    min_scores: {
+      title: 'ПОСТУПЛЕНИЕ',
+      ege: [
+        { score: '', subject: 'Предмет1' },
+        { score: '', subject: 'Предмет2' },
+        { score: '', subject: 'предмет3' },
+      ],
+      spo: [
+        { score: '', subject: 'Крутое название экзамена' },
+        { score: '', subject: 'Крутое название экзамена' },
+        { score: '', subject: 'Крутое название экзамена' },
+      ]
+    },
+    pass_scores: {
+      years: [
+        { year: '2023', score: '' },
+        { year: '2022', score: '' },
+        { year: '2021', score: '' }
+      ],
+      tuition: { text: '', price: '' }
     }
   };
 
@@ -298,7 +325,13 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
                   setContent={setContent}
                 />
               )}
-              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission'].includes(type) && (
+              {type === 'min_scores' && (
+                <MinScoresBlockEditor content={content} setContent={setContent} onSave={handleSave} onCancel={() => setIsEditing(false)} />
+              )}
+              {type === 'pass_scores' && (
+                <PassScoresBlockEditor content={content} setContent={setContent} onSave={handleSave} onCancel={() => setIsEditing(false)} />
+              )}
+              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission', 'min_scores', 'pass_scores'].includes(type) && (
                 <div className="text-red-500 p-4 bg-red-50 border-2 border-red-200">
                   Неизвестный тип блока: {type}
                 </div>
@@ -314,6 +347,8 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
               {type === 'career' && <CareerBlockView content={content} />}
               {type === 'gallery' && <GalleryBlockView content={content} />}
               {type === 'admission' && <AdmissionBlockView content={content} />}
+              {type === 'min_scores' && <MinScoresBlockView content={content} />}
+              {type === 'pass_scores' && <PassScoresBlockView content={content} />}
             </div>
           )}
 

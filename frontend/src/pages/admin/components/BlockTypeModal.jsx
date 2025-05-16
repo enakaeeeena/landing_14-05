@@ -14,6 +14,27 @@ const baseTemplates = {
         description: 'Узнайте больше о том, что мы предлагаем',
         image: '/path/to/about-image.jpg'
     },
+    [BLOCK_TYPES.MIN_SCORES]: {
+        title: 'ПОСТУПЛЕНИЕ',
+        ege: [
+            { score: '', subject: 'Предмет1' },
+            { score: '', subject: 'Предмет2' },
+            { score: '', subject: 'предмет3' },
+        ],
+        spo: [
+            { score: '', subject: 'Крутое название экзамена' },
+            { score: '', subject: 'Крутое название экзамена' },
+            { score: '', subject: 'Крутое название экзамена' },
+        ]
+    },
+    [BLOCK_TYPES.PASS_SCORES]: {
+        years: [
+            { year: '2023', score: '' },
+            { year: '2022', score: '' },
+            { year: '2021', score: '' }
+        ],
+        tuition: { text: '', price: '' }
+    },
     // ... другие шаблоны по необходимости
 };
 

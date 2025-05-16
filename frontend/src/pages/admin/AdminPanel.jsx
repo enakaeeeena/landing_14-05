@@ -122,22 +122,13 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
         AfterBlockId: afterBlockId || null
       };
       const response = await post('/api/blocks', blockData);
-      if (response.ok) {
-        const createdBlock = await response.json();
-        // Вставляем новый блок после afterBlockId
-        setBlocks(prev => {
-          if (!afterBlockId) return [...prev, { ...createdBlock, content: typeof createdBlock.content === 'string' ? safeParse(createdBlock.content) : createdBlock.content }];
-          const idx = prev.findIndex(b => b.id === afterBlockId);
-          if (idx === -1) return [...prev, { ...createdBlock, content: typeof createdBlock.content === 'string' ? safeParse(createdBlock.content) : createdBlock.content }];
-          const newArr = [...prev];
-          newArr.splice(idx + 1, 0, { ...createdBlock, content: typeof createdBlock.content === 'string' ? safeParse(createdBlock.content) : createdBlock.content });
-          return newArr;
-        });
+      if (response.status === 201) {
+        const createdBlock = response.data;
+        setBlocks(prev => [...prev, { ...createdBlock, content: typeof createdBlock.content === 'string' ? safeParse(createdBlock.content) : createdBlock.content }]);
         setShowBlockModal(false);
         setSelectedAfterBlockId(null);
       } else {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Ошибка создания блока');
+        throw new Error(response.data?.message || 'Ошибка создания блока');
       }
     } catch (e) {
       console.error('Ошибка создания блока:', e.message || 'Неизвестная ошибка');

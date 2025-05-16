@@ -1546,3 +1546,4 @@ C:\Users\Yanoc\Documents\GitHub\landing_14-05\backend\lending_skills_backend\len
 C:\Users\Yanoc\Documents\GitHub\landing_14-05\backend\lending_skills_backend\lending_skills_backend\obj\Debug\net8.0\lending_skills_backend.pdb
 C:\Users\Yanoc\Documents\GitHub\landing_14-05\backend\lending_skills_backend\lending_skills_backend\obj\Debug\net8.0\lending_skills_backend.genruntimeconfig.cache
 C:\Users\Yanoc\Documents\GitHub\landing_14-05\backend\lending_skills_backend\lending_skills_backend\obj\Debug\net8.0\ref\lending_skills_backend.dll
+C:\Users\Yanoc\Documents\GitHub\landing_14-05\backend\lending_skills_backend\lending_skills_backend\bin\Debug\net8.0\lending_skills_backend.staticwebassets.runtime.json
