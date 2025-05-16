@@ -68,6 +68,7 @@ function App() {
               <Route path="/skills/profile/:id" element={<ProfileView />} />
               <Route path="/skills/dashboard" element={<SkillsDashboard />} />
               <Route path="/skills/block" element={<SkillsBlock />} />
+              <Route path="/skills/admin" element={<AdminPanel headerLinks={headerLinks} setHeaderLinks={setHeaderLinks} />} />
 
               {/* Main Routes */}
               <Route path="/" element={<LandingPage />} />

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ContactModal from './components/ContactModal';
 import ProjectModal from './components/ProjectModal';
 import Filters from './components/Filters'; 
+import ProfileCardModal from './components/ProfileCardModal';
 
 const ProfileView = () => {
   const { id } = useParams();
@@ -19,6 +20,8 @@ const ProfileView = () => {
     tags: ''
   });
   const [openProject, setOpenProject] = useState(null);
+  const [showProfileCard, setShowProfileCard] = useState(false);
+  const [selectedProjects, setSelectedProjects] = useState(Array(4).fill(null));
 
   // 🔹 Состояния фильтров
   const [yearFilter, setYearFilter] = useState('');
@@ -61,6 +64,15 @@ const ProfileView = () => {
     setProjects(updatedProjects);
     setShowProjectForm(false);
     setNewProject({ title: '', description: '', mainImage: null, otherImages: [], tags: '' });
+  };
+
+  const handleAddProjectToCard = (project) => {
+    const emptySlotIndex = selectedProjects.findIndex(p => p === null);
+    if (emptySlotIndex !== -1) {
+      const updatedSelectedProjects = [...selectedProjects];
+      updatedSelectedProjects[emptySlotIndex] = project;
+      setSelectedProjects(updatedSelectedProjects);
+    }
   };
 
   // 🔹 Фильтрация и сортировка
@@ -106,9 +118,10 @@ const ProfileView = () => {
         <p className="mt-1 text-gray-800">{user.aboutMe || '—'}</p>
       </div>
 
-      {/* Кнопка "Добавить проект" */}
-      <div>
+      {/* Кнопки проектов */}
+      <div className="flex gap-4">
         <button onClick={() => setShowProjectForm(true)} className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Добавить проект</button>
+        <button onClick={() => setShowProfileCard(true)} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Карточка профиля</button>
       </div>
 
       {/* Форма добавления проекта */}
@@ -170,6 +183,26 @@ const ProfileView = () => {
       {/* Модальные окна */}
       {showModal && <ContactModal user={user} onClose={() => setShowModal(false)} />}
       {openProject && <ProjectModal project={openProject} onClose={() => setOpenProject(null)} />}
+      
+      {showProfileCard && (
+  <ProfileCardModal
+    user={user}
+    selectedProjects={selectedProjects}
+    filteredProjects={filteredProjects}
+    onClose={() => setShowProfileCard(false)}
+    onRemoveProject={(index) => {
+      const updated = [...selectedProjects];
+      updated[index] = null;
+      setSelectedProjects(updated);
+    }}
+    onAddProjectToCard={handleAddProjectToCard}
+    onPublish={(profileData) => {
+      // Здесь должна быть логика сохранения в localStorage/отправки на сервер
+      localStorage.setItem('publishedProfile', JSON.stringify(profileData));
+      navigate('/auth'); // Перенаправляем на страницу авторизации
+    }}
+  />
+)}
     </div>
   );
 };

@@ -249,7 +249,7 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
           <nav className="space-y-2">
             {isSuperAdmin && (
               <Link
-                to="/admin/manage-admins"
+                to="/ITxD-skills/admin/manage-admins"
                 className="flex items-center gap-2 p-2 rounded hover:bg-gray-100"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -258,7 +258,7 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
               </Link>
             )}
             <Link
-              to="/admin/landings"
+              to="/ITxD-skills/admin/landings"
               className="flex items-center gap-2 p-2 rounded hover:bg-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -266,7 +266,7 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
               <span>Создание лендинга</span>
             </Link>
             <Link
-              to="/admin/gallery"
+              to="/ITxD-skills/admin/gallery"
               className="flex items-center gap-2 p-2 rounded hover:bg-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -274,7 +274,7 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
               <span>Галерея работ</span>
             </Link>
             <Link
-              to="/admin/reviews"
+              to="/ITxD-skills/admin/reviews"
               className="flex items-center gap-2 p-2 rounded hover:bg-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >

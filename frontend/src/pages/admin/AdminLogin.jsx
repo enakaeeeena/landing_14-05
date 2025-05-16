@@ -14,7 +14,7 @@ const AdminLogin = () => {
     const adminPassword = import.meta.env.VITE_APP_ADMIN_PASSWORD;
     if (password === adminPassword) {
       login(); 
-      navigate('/admin');
+      navigate('/ITxD-skills/admin');
     } else {
       setError('Неверный пароль');
     }
