@@ -6,6 +6,7 @@ import BlockTypeModal from '../admin/components/BlockTypeModal';
 import { useApi } from '../../hooks/useApi';
 import { Link, useLocation } from 'react-router-dom';
 import HeaderEditor from '../admin/components/HeaderEditor';
+import FooterBlockEditor from '../../blocks/FooterBlock/components/FooterBlockEditor';
 
 const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
   const { isAdmin, isSuperAdmin } = useAdmin();
@@ -16,6 +17,17 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
   const { get, post, put, del } = useApi();
   const location = useLocation();
   const [selectedAfterBlockId, setSelectedAfterBlockId] = useState(null);
+  const [showFooterEditor, setShowFooterEditor] = useState(false);
+  const [footerContent, setFooterContent] = useState(() => {
+    const saved = localStorage.getItem('footerContent');
+    return saved ? JSON.parse(saved) : {
+      logo: '',
+      address: 'г. Санкт–Петербург\nм. Невский проспект,\nнаб. реки Мойки, 4В',
+      links: [],
+      phone: '',
+      email: '',
+    };
+  });
 
   useEffect(() => {
     const fetchBlocks = async () => {
@@ -38,6 +50,10 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
     };
     fetchBlocks();
   }, [get]);
+
+  useEffect(() => {
+    localStorage.setItem('footerContent', JSON.stringify(footerContent));
+  }, [footerContent]);
 
   // Безопасный парсер JSON
   function safeParse(str) {
@@ -275,6 +291,16 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
               <FiSettings className="text-[#0C3281]" />
               <span>Изменить шапку</span>
             </button>
+            <button
+              onClick={() => {
+                setShowFooterEditor(true);
+                setIsMenuOpen(false);
+              }}
+              className="w-full flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-left"
+            >
+              <FiSettings className="text-[#0C3281]" />
+              <span>Изменить футер</span>
+            </button>
           </nav>
         </div>
       </div>
@@ -320,6 +346,15 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
           headerLinks={headerLinks || []}
           onSave={handleSaveHeader}
         />
+      )}
+
+      {showFooterEditor && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[1000]">
+          <div className="bg-gray-50 p-8 w-full max-w-5xl rounded-2xl shadow-2xl relative">
+            <button onClick={() => setShowFooterEditor(false)} className="absolute top-4 right-4 text-3xl text-gray-500 hover:text-black">✕</button>
+            <FooterBlockEditor content={footerContent} setContent={setFooterContent} />
+          </div>
+        </div>
       )}
     </div>
   );

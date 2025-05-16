@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './Components/Header';
 import LandingPage from './pages/Main/LandingPage';
 import ProfessorsPage from './pages/professorsPage/ProfessorsPages';
@@ -13,9 +13,10 @@ import ProfileView from './pages/SkillsPassport/ProfileView.jsx';
 import AuthPage from './pages/SkillsPassport/AuthPage.jsx';
 import SkillsDashboard from './pages/SkillsPassport/SkillsDashboard';
 import SkillsBlock from './pages/SkillsPassport/SkillsBlock';
-import ConnectionTest from './Components/ConnectionTest';
+// import ConnectionTest from './Components/ConnectionTest';
+import FooterBlock from './blocks/FooterBlock/FooterBlock';
 
-// Create router with future flags
+
 const router = {
   future: {
     v7_startTransition: true,
@@ -34,6 +35,25 @@ function App() {
           { label: 'Галерея', path: '/gallery' }
         ];
   });
+  const [footerContent, setFooterContent] = useState(() => {
+    const saved = localStorage.getItem('footerContent');
+    return saved ? JSON.parse(saved) : {
+      logo: '',
+      address: 'г. Санкт–Петербург\nм. Невский проспект,\nнаб. реки Мойки, 4В',
+      links: [
+        { label: 'о программе', url: '/', isExternal: false },
+        { label: 'галерея', url: '/gallery', isExternal: false },
+        { label: 'абитуриенту', url: '/admission', isExternal: false },
+        { label: 'скиллс-паспорт', url: '/skills', isExternal: false },
+        { label: 'лаборатория', url: '/lab', isExternal: false },
+      ],
+      phone: '+7 (812) 571-10-03',
+      email: 'icsto@herzen.spb.ru',
+    };
+  });
+  useEffect(() => {
+    localStorage.setItem('footerContent', JSON.stringify(footerContent));
+  }, [footerContent]);
 
   return (
     <AdminProvider>
@@ -64,7 +84,8 @@ function App() {
           </div>
         </main>
 
-        <ConnectionTest />
+        {/* <ConnectionTest /> */}
+        <FooterBlock content={footerContent} />
       </div>
     </AdminProvider>
   );

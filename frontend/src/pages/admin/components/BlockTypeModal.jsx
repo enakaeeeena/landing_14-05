@@ -35,6 +35,13 @@ const baseTemplates = {
         ],
         tuition: { text: '', price: '' }
     },
+    [BLOCK_TYPES.OLYMPIADS]: {
+        title1: 'ОЛИМПИАДЫ',
+        title2: 'ДЛЯ ВНЕКОНКУРСНОГО ПОСТУПЛЕНИЯ',
+        items: [],
+        buttonText: 'Подать документы',
+        buttonUrl: '#'
+    },
     // ... другие шаблоны по необходимости
 };
 

@@ -23,6 +23,9 @@ const MinScoresBlockView = ({ content = {} }) => {
             <div key={idx} className="flex flex-col items-center border-3 border-black p-6 h-full justify-center w-full">
               <div className="text-5xl font-bold mb-2">{item.score}</div>
               <div className="text-lg text-center font-medium break-words whitespace-pre-line">{item.subject}</div>
+              {item.year && (
+                <div className="text-base text-center text-gray-500 mt-1">{item.year} г.</div>
+              )}
             </div>
           ))}
         </div>
@@ -36,6 +39,9 @@ const MinScoresBlockView = ({ content = {} }) => {
             <div key={idx} className="flex flex-col items-center border-3 border-black p-6 h-full justify-center w-full">
               <div className="text-5xl font-bold mb-2">{item.score}</div>
               <div className="text-lg text-center font-medium break-words whitespace-pre-line">{item.subject}</div>
+              {item.year && (
+                <div className="text-base text-center text-gray-500 mt-1">{item.year} г.</div>
+              )}
             </div>
           ))}
         </div>

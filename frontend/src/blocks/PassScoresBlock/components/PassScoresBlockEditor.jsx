@@ -15,8 +15,8 @@ const PassScoresBlockEditor = ({ content = {}, setContent, onSave, onCancel }) =
     setContent({ years, tuition: { text: tuitionText, price: tuitionPrice } });
   }, [years, tuitionText, tuitionPrice]);
 
-  const handleYearChange = (idx, value) => {
-    setYears(years.map((item, i) => i === idx ? { ...item, score: value } : item));
+  const handleYearChange = (idx, field, value) => {
+    setYears(years.map((item, i) => i === idx ? { ...item, [field]: value } : item));
   };
 
   return (
@@ -25,13 +25,22 @@ const PassScoresBlockEditor = ({ content = {}, setContent, onSave, onCancel }) =
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 w-full">
         {years.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center border-3 border-black p-6 h-full justify-center w-full">
-            <input
-              className="text-4xl font-bold mb-2 text-center bg-transparent outline-none border-b-2 border-black"
-              value={item.score}
-              onChange={e => handleYearChange(idx, e.target.value)}
-              placeholder="___"
-              style={{ width: 60 }}
-            />
+            <div className="flex flex-row items-center gap-2 w-full justify-center">
+              <input
+                className="text-4xl font-bold mb-2 text-center bg-transparent outline-none border-b-2 border-black"
+                value={item.score}
+                onChange={e => handleYearChange(idx, 'score', e.target.value)}
+                placeholder="___"
+                style={{ width: 60 }}
+              />
+              <input
+                className="text-base text-center bg-transparent outline-none border-b-2 border-gray-400 ml-2"
+                value={item.year}
+                onChange={e => handleYearChange(idx, 'year', e.target.value)}
+                placeholder="Год"
+                style={{ width: 60 }}
+              />
+            </div>
             <div className="text-base text-center font-medium">в {item.year}г</div>
           </div>
         ))}

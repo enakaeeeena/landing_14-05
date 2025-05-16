@@ -21,6 +21,7 @@ import MinScoresBlockView from '../../blocks/MinScoresBlock/components/MinScores
 import PassScoresBlock from '../../blocks/PassScoresBlock/PassScoresBlock';
 import PassScoresBlockEditor from '../../blocks/PassScoresBlock/components/PassScoresBlockEditor';
 import PassScoresBlockView from '../../blocks/PassScoresBlock/components/PassScoresBlockView';
+import OlympiadsBlock from '../../blocks/OlympiadsBlock/OlympiadsBlock';
 
 function safeParse(str) {
   try {
@@ -100,7 +101,14 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
         { year: '2021', score: '' }
       ],
       tuition: { text: '', price: '' }
-    }
+    },
+    olympiads: {
+      title1: 'ОЛИМПИАДЫ',
+      title2: 'ДЛЯ ВНЕКОНКУРСНОГО ПОСТУПЛЕНИЯ',
+      items: [],
+      buttonText: 'Подать документы',
+      buttonUrl: '#'
+    },
   };
 
   // Привести тип к нижнему регистру
@@ -331,7 +339,16 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
               {type === 'pass_scores' && (
                 <PassScoresBlockEditor content={content} setContent={setContent} onSave={handleSave} onCancel={() => setIsEditing(false)} />
               )}
-              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission', 'min_scores', 'pass_scores'].includes(type) && (
+              {type === 'olympiads' && (
+                <OlympiadsBlock
+                  content={content}
+                  isAdminView={true}
+                  setContent={setContent}
+                  editMode={isEditing}
+                  setEditMode={setIsEditing}
+                />
+              )}
+              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission', 'min_scores', 'pass_scores', 'olympiads'].includes(type) && (
                 <div className="text-red-500 p-4 bg-red-50 border-2 border-red-200">
                   Неизвестный тип блока: {type}
                 </div>
@@ -349,6 +366,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
               {type === 'admission' && <AdmissionBlockView content={content} />}
               {type === 'min_scores' && <MinScoresBlockView content={content} />}
               {type === 'pass_scores' && <PassScoresBlockView content={content} />}
+              {type === 'olympiads' && <OlympiadsBlock content={content} />}
             </div>
           )}
 
