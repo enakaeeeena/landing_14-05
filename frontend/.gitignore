@@ -3,3 +3,24 @@
 *.suo
 *.user
 *.cache
+*.v2
+*.db
+*.bin
+*.json
+*.dll
+*.exe
+*.pdb
+*.log
+*.tmp
+*.bak
+*.swp
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Node
+node_modules/
+dist/
+build/

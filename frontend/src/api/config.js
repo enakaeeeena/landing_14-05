@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5218"; // Updated to match the backend server port
+const API_BASE_URL = "https://localhost:7002"; // Updated to use HTTPS
 
 const api = axios.create({
   baseURL: API_BASE_URL,

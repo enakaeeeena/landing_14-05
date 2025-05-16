@@ -35,7 +35,14 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll",
         builder =>
     {
-            builder.WithOrigins("http://localhost:5173", "http://localhost:3000", "http://localhost:8080")
+            builder.WithOrigins(
+                "http://localhost:5173",
+                "https://localhost:5173",
+                "http://localhost:3000",
+                "https://localhost:3000",
+                "http://localhost:8080",
+                "https://localhost:8080"
+            )
                    .AllowAnyMethod()
                    .AllowAnyHeader()
                    .AllowCredentials();
@@ -122,19 +129,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-// Add this line to handle OPTIONS requests
-app.Use(async (context, next) =>
-{
-    if (context.Request.Method == "OPTIONS")
-    {
-        context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
-        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type,Authorization");
-        context.Response.Headers.Add("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
-        context.Response.StatusCode = 200;
-        return;
-    }
-    await next();
-});
 
 app.Run();

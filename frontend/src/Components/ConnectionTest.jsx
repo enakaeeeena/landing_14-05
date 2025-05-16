@@ -8,8 +8,8 @@ const ConnectionTest = () => {
   useEffect(() => {
     const checkConnection = async () => {
       try {
-        // Попробуем сделать простой GET запрос к корню API
-        await api.get('/');
+        // Используем существующий эндпоинт API для проверки подключения
+        await api.get('/api/blocks');
         setStatus('✅ Подключение успешно установлено');
         setError(null);
       } catch (err) {
