@@ -16,7 +16,7 @@ const FooterBlockView = ({ content = {} }) => {
         {/* Логотип */}
         <div className="flex items-center justify-center min-w-[180px] max-w-[220px] mr-8">
           {logo ? (
-            <img src={logo} alt="Логотип" className="object-contain w-[180px] h-[120px] bg-white rounded" />
+            <img src={logo} alt="Логотип" className="object-contain w-[180px] h-[120px] " />
           ) : (
             <div className="w-[180px] h-[120px] bg-gray-300 rounded" />
           )}
