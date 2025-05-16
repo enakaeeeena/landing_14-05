@@ -13,7 +13,7 @@ import ProfileView from './pages/SkillsPassport/ProfileView.jsx';
 import AuthPage from './pages/SkillsPassport/AuthPage.jsx';
 import SkillsDashboard from './pages/SkillsPassport/SkillsDashboard';
 import SkillsBlock from './pages/SkillsPassport/SkillsBlock';
-import ConnectionTest from './components/ConnectionTest';
+import ConnectionTest from './Components/ConnectionTest';
 
 // Create router with future flags
 const router = {

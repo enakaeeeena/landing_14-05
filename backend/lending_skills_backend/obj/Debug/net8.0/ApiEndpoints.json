@@ -1465,15 +1465,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "lending_skills_backend.Controllers.HealthController",
-    "Method": "Get",
-    "RelativePath": "Health",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

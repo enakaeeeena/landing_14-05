@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import EditableBlock from '../../components/blocks/EditableBlock';
+import EditableBlock from '../../Components/blocks/EditableBlock';
 import { useApi } from '../../hooks/useApi';
 
 const LandingPage = () => {

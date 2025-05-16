@@ -969,18 +969,6 @@
         }
       }
     },
-    "/Health": {
-      "get": {
-        "tags": [
-          "Health"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/api/reset/request": {
       "post": {
         "tags": [

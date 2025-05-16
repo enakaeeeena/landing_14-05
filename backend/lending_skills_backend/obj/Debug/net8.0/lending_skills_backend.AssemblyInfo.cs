@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lending_skills_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9118edaf942946551dd0c011585d747cbf0ecbdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513604ec1c6e874b0ed858d1fb7a16e50184a6f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("lending_skills_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lending_skills_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

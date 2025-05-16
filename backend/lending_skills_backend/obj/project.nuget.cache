@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iafoZr91gg0=",
+  "dgSpecHash": "ff7KcQ2QsEo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\lending_skills_backend.csproj",
+  "projectFilePath": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\lending_skills_backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yanoc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -96,8 +96,9 @@
     "C:\\Users\\Yanoc\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.202\\microsoft.net.sdk.compilers.toolset.9.0.202.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
     "C:\\Users\\Yanoc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
   ],

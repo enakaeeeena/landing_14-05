@@ -1,58 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\dtos\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\dtos\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\dtos\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\helpers\\emailconfirmationstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\helpers\\emailconfirmationstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\helpers\\emailconfirmationstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\helpers\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\dtos\\requests\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\dtos\\requests\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\dtos\\requests\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\dtos\\requests\\confirmemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\dtos\\requests\\confirmemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\dtos\\requests\\confirmemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/lendingDb33/True/SqlTable/dbo.Tokens.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -61,7 +61,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\models\\dbuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|c:\\users\\yanoc\\documents\\github\\landing_14-05\\backend\\lending_skills_backend\\models\\dbuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CE0DDBE-8D3A-42D2-B6F5-3FFD89789645}|lending_skills_backend\\lending_skills_backend.csproj|solutionrelative:lending_skills_backend\\models\\dbuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -72,33 +72,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
               "RelativeToolTip": "lending_skills_backend\\Dtos\\Requests\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T19:25:33.539Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\appsettings.json",
               "RelativeDocumentMoniker": "lending_skills_backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\appsettings.json",
               "RelativeToolTip": "lending_skills_backend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-11T13:41:36.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "c0tqpwos..sql",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-10T18:49:24.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailConfirmationStore.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
+              "RelativeDocumentMoniker": "lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
+              "RelativeToolTip": "lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T17:55:54.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfirmEmailRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
+              "RelativeDocumentMoniker": "lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
+              "RelativeToolTip": "lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T17:55:17.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DbUser.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Models\\DbUser.cs",
+              "RelativeDocumentMoniker": "lending_skills_backend\\Models\\DbUser.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Models\\DbUser.cs",
+              "RelativeToolTip": "lending_skills_backend\\Models\\DbUser.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T17:53:45.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Program.cs",
+              "RelativeDocumentMoniker": "lending_skills_backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Program.cs",
+              "RelativeToolTip": "lending_skills_backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T22:26:38.819Z",
               "EditorCaption": ""
             },
             {
@@ -112,58 +171,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "c0tqpwos..sql",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
-              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\\u041E\u043B\u0435\u0433\\AppData\\Local\\Temp\\c0tqpwos..sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-10T18:49:24.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmailConfirmationStore.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
-              "RelativeDocumentMoniker": "lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
-              "RelativeToolTip": "lending_skills_backend\\Helpers\\EmailConfirmationStore.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswBoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:55:54.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ConfirmEmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
-              "RelativeDocumentMoniker": "lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
-              "RelativeToolTip": "lending_skills_backend\\Dtos\\Requests\\ConfirmEmailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:55:17.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DbUser.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Models\\DbUser.cs",
-              "RelativeDocumentMoniker": "lending_skills_backend\\Models\\DbUser.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Models\\DbUser.cs",
-              "RelativeToolTip": "lending_skills_backend\\Models\\DbUser.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:53:45.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Services\\EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Services\\EmailService.cs",
               "RelativeToolTip": "lending_skills_backend\\Services\\EmailService.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAADwvxgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -172,22 +184,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Program.cs",
-              "RelativeDocumentMoniker": "lending_skills_backend\\Program.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Program.cs",
-              "RelativeToolTip": "lending_skills_backend\\Program.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T22:26:38.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
               "RelativeToolTip": "lending_skills_backend\\DataAccess\\ApplicationDbContext.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -195,11 +195,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\EmailController.cs",
               "RelativeToolTip": "lending_skills_backend\\Controllers\\EmailController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -207,11 +207,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Services\\AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Services\\AuthService.cs",
               "RelativeToolTip": "lending_skills_backend\\Services\\AuthService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -219,11 +219,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\UsersController.cs",
               "RelativeToolTip": "lending_skills_backend\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -231,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Controllers\\AuthController.cs",
               "RelativeToolTip": "lending_skills_backend\\Controllers\\AuthController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -243,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
               "RelativeToolTip": "lending_skills_backend\\Dtos\\Requests\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -255,11 +255,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PasswordHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Helpers\\PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Helpers\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "lending_skills_backend\\Helpers\\PasswordHelper.cs",
-              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing-process-full_11_05\\landing-process\\landing-frontend_08_05\\lending_skills_backend\\lending_skills_backend\\Helpers\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\Yanoc\\Documents\\GitHub\\landing_14-05\\backend\\lending_skills_backend\\Helpers\\PasswordHelper.cs",
               "RelativeToolTip": "lending_skills_backend\\Helpers\\PasswordHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
