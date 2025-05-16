@@ -76,10 +76,9 @@ function App() {
 
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
-              <Route path="/admin" element={<AdminPanel headerLinks={headerLinks} setHeaderLinks={setHeaderLinks} />}>
-                <Route path="gallery" element={<GalleryPage />} />
-                <Route path="reviews" element={<ReviewsPage />} />
-              </Route>
+              <Route path="/admin" element={<AdminPanel headerLinks={headerLinks} setHeaderLinks={setHeaderLinks} />} />
+              <Route path="/admin/gallery" element={<GalleryPage />} />
+              <Route path="/admin/reviews" element={<ReviewsPage />} />
             </Routes>
           </div>
         </main>

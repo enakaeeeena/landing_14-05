@@ -4,7 +4,7 @@ import EditableBlock from '../../Components/blocks/EditableBlock';
 import { FiPlus, FiUsers, FiLayout, FiImage, FiMessageSquare, FiMenu, FiSettings } from 'react-icons/fi';
 import BlockTypeModal from '../admin/components/BlockTypeModal';
 import { useApi } from '../../hooks/useApi';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, Outlet } from 'react-router-dom';
 import HeaderEditor from '../admin/components/HeaderEditor';
 import FooterBlockEditor from '../../blocks/FooterBlock/components/FooterBlockEditor';
 
@@ -363,6 +363,8 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
           </div>
         </div>
       )}
+
+      <Outlet />
     </div>
   );
 };
