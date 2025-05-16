@@ -22,6 +22,8 @@ import PassScoresBlock from '../../blocks/PassScoresBlock/PassScoresBlock';
 import PassScoresBlockEditor from '../../blocks/PassScoresBlock/components/PassScoresBlockEditor';
 import PassScoresBlockView from '../../blocks/PassScoresBlock/components/PassScoresBlockView';
 import OlympiadsBlock from '../../blocks/OlympiadsBlock/OlympiadsBlock';
+import { OpenDayBlockView } from '../../blocks/OpenDay/components/OpenDayBlockView';
+import { OpenDayEditor } from '../../blocks/OpenDay/components/OpenDayEditor';
 
 function safeParse(str) {
   try {
@@ -109,6 +111,11 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
       buttonText: 'Подать документы',
       buttonUrl: '#'
     },
+    open_day: {
+      title: '',
+      description: '',
+      image: ''
+    }
   };
 
   // Привести тип к нижнему регистру
@@ -348,7 +355,10 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
                   setEditMode={setIsEditing}
                 />
               )}
-              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission', 'min_scores', 'pass_scores', 'olympiads'].includes(type) && (
+              {type === 'open_day' && (
+                <OpenDayEditor content={content} setContent={setContent} />
+              )}
+              {!['hero', 'about', 'professors', 'curriculum', 'reviews', 'career', 'gallery', 'admission', 'min_scores', 'pass_scores', 'olympiads', 'open_day'].includes(type) && (
                 <div className="text-red-500 p-4 bg-red-50 border-2 border-red-200">
                   Неизвестный тип блока: {type}
                 </div>
@@ -367,6 +377,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
               {type === 'min_scores' && <MinScoresBlockView content={content} />}
               {type === 'pass_scores' && <PassScoresBlockView content={content} />}
               {type === 'olympiads' && <OlympiadsBlock content={content} />}
+              {type === 'open_day' && <OpenDayBlockView content={content} />}
             </div>
           )}
 

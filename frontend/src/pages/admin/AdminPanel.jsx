@@ -352,7 +352,14 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[1000]">
           <div className="bg-gray-50 p-8 w-full max-w-5xl rounded-2xl shadow-2xl relative">
             <button onClick={() => setShowFooterEditor(false)} className="absolute top-4 right-4 text-3xl text-gray-500 hover:text-black">✕</button>
-            <FooterBlockEditor content={footerContent} setContent={setFooterContent} />
+            <FooterBlockEditor 
+              content={footerContent} 
+              setContent={setFooterContent} 
+              onSave={(newContent) => {
+                setFooterContent(newContent);
+                setShowFooterEditor(false);
+              }}
+            />
           </div>
         </div>
       )}
