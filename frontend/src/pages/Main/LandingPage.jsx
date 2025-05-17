@@ -4,23 +4,20 @@ import { useApi } from '../../hooks/useApi';
 
 const LandingPage = () => {
   const [blocks, setBlocks] = useState([]);
-  const { get } = useApi();
+  const { get, error } = useApi();
 
   useEffect(() => {
     const loadBlocks = async () => {
       try {
-        const response = await get('/api/blocks');
-        if (response.ok) {
-          const data = await response.json();
-          const validBlocks = data
-            .filter(block => block?.id && block?.type && block?.visible !== undefined)
-            .map(block => ({
-              ...block,
-              type: block.type.toLowerCase(),
-              content: typeof block.content === 'string' ? JSON.parse(block.content) : block.content
-            }));
-          setBlocks(validBlocks.filter(block => block.visible));
-        }
+        const data = await get('/blocks');
+        const validBlocks = data
+          .filter(block => block?.id && block?.type && block?.visible !== undefined)
+          .map(block => ({
+            ...block,
+            type: block.type.toLowerCase(),
+            content: typeof block.content === 'string' ? JSON.parse(block.content) : block.content
+          }));
+        setBlocks(validBlocks.filter(block => block.visible));
       } catch (error) {
         console.error('Ошибка загрузки блоков:', error);
       }
@@ -29,23 +26,18 @@ const LandingPage = () => {
     loadBlocks();
   }, [get]);
 
+  if (error) {
+    return (
+      <div className="container mx-auto text-center text-red-500 py-16">
+        Ошибка загрузки блоков: {error}
+      </div>
+    );
+  }
+
   return (
     <div className="bg-background min-h-screen">
       {blocks.map(block => {
         const isFullWidth = block.type === 'curriculum';
-
-        const BlockContent = (
-          <EditableBlock 
-            key={block.id}
-            block={block} 
-            isAdminView={false} 
-            onError={(error) => (
-              <div className="bg-red-100 p-4 border-2 border-red-500">
-                Ошибка отображения блока: {error.message}
-              </div>
-            )}
-          />
-        );
 
         return (
           <section 
@@ -55,6 +47,11 @@ const LandingPage = () => {
             <EditableBlock 
               block={block} 
               isAdminView={false} 
+              onError={(error) => (
+                <div className="bg-red-100 p-4 border-2 border-red-500">
+                  Ошибка отображения блока: {error.message}
+                </div>
+              )}
             />
           </section>
         );

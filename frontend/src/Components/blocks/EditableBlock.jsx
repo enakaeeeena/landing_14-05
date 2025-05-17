@@ -47,7 +47,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
   const [error, setError] = useState(null);
   const settingsRef = useRef(null);
 
-  // Дефолтные шаблоны для content
+  // Шаблоны контента по умолчанию для новых блоков
   const defaultTemplates = {
     hero: {
       title: '',
@@ -118,10 +118,10 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     }
   };
 
-  // Привести тип к нижнему регистру
+  // Преобразование типа блока в нижний регистр
   const type = (block.type || '').toLowerCase();
 
-  // Проверка блока и его типа
+  // Проверка корректности блока и его типа
   useEffect(() => {
     if (!block) {
       setError('Блок не загружен');
@@ -136,7 +136,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     setError(null);
   }, [block]);
 
-  // Инициализация контента при монтировании или изменении блока
+  // Инициализация контента при первой загрузке или изменении блока
   useEffect(() => {
     if (!content || (typeof content === 'object' && Object.keys(content).length === 0)) {
       const initialContent = typeof block.content === 'string' 
@@ -149,9 +149,9 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
         setContent(initialContent);
       }
     }
-  }, [block.id]); // Зависимость только от ID блока
+  }, [block.id]); // Обновляем только при изменении идентификатора блока
 
-  // Закрытие меню при клике вне его
+  // Закрытие меню при клике вне его области
   useEffect(() => {
     if (!settingsOpen) return;
     const handleClick = (e) => {
@@ -163,7 +163,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     return () => document.removeEventListener('mousedown', handleClick);
   }, [settingsOpen]);
 
-  // При открытии редактора, если content пустой, подставить дефолт
+  // Установка контента по умолчанию при открытии пустого редактора
   useEffect(() => {
     if (isEditing && (!content || (typeof content === 'object' && Object.keys(content).length === 0))) {
       setContent(defaultTemplates[type] || {});
@@ -174,15 +174,15 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     console.log('Saving block:', block);
     console.log('Current content:', content);
     
-    // Подготавливаем данные для отправки
+    // Подготовка данных для сохранения
     const updatedBlock = {
-      ...block,
-      type: block.type.toLowerCase(), // Приводим тип к нижнему регистру
-      content: content, // Отправляем content как объект
+      id: block.id,
+      type: block.type.toLowerCase(),
       title: block.title,
+      content: typeof content === 'string' ? content : JSON.stringify(content),
       visible: block.visible,
       date: block.date || new Date().toISOString().split('T')[0],
-      isExample: block.isExample || false
+      isExample: (block.isExample || "false").toString()
     };
     
     console.log('Updated block for server:', updatedBlock);
@@ -194,7 +194,7 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     } catch (error) {
       console.error('Save error:', error);
       setError('Ошибка при сохранении блока: ' + (error.message || 'Неизвестная ошибка'));
-      // Не закрываем редактор при ошибке
+      // Сохраняем редактор открытым при возникновении ошибки
     }
   };
 

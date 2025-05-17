@@ -138,14 +138,21 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
         AfterBlockId: afterBlockId || null
       };
       const response = await post('/api/blocks', blockData);
-      if (response.status === 201) {
-        const createdBlock = response.data;
-        setBlocks(prev => [...prev, { ...createdBlock, content: typeof createdBlock.content === 'string' ? safeParse(createdBlock.content) : createdBlock.content }]);
-        setShowBlockModal(false);
-        setSelectedAfterBlockId(null);
-      } else {
-        throw new Error(response.data?.message || 'Ошибка создания блока');
-      }
+      const createdBlock = response;
+      setBlocks(prev => [...prev, { 
+        ...createdBlock, 
+        id: createdBlock.Id || createdBlock.id,
+        type: (createdBlock.Type || createdBlock.type || '').toLowerCase(),
+        title: createdBlock.Title || createdBlock.title || '',
+        content: typeof createdBlock.Content === 'string' ? 
+          safeParse(createdBlock.Content) : 
+          (createdBlock.content || {}),
+        visible: createdBlock.Visible ?? createdBlock.visible ?? true,
+        date: createdBlock.Date || createdBlock.date || new Date().toISOString().split('T')[0],
+        isExample: createdBlock.IsExample ?? createdBlock.isExample ?? false
+      }]);
+      setShowBlockModal(false);
+      setSelectedAfterBlockId(null);
     } catch (e) {
       console.error('Ошибка создания блока:', e.message || 'Неизвестная ошибка');
       throw e;
@@ -158,26 +165,19 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
         
         // Форматируем данные для сервера
         const requestData = {
-            Id: id,
-            Type: (newData?.type || '').toLowerCase(),
-            Title: newData?.title || '',
-            Content: typeof newData?.content === 'object' ? JSON.stringify(newData.content) : (newData?.content || '{}'),
-            Visible: typeof newData?.visible === 'boolean' ? newData.visible : true,
-            Date: newData?.date || new Date().toISOString().split('T')[0],
-            IsExample: newData?.isExample || false
+            id: id,
+            type: (newData?.type || '').toLowerCase(),
+            title: newData?.title || '',
+            content: typeof newData?.content === 'object' ? JSON.stringify(newData.content) : (newData?.content || '{}'),
+            visible: typeof newData?.visible === 'boolean' ? newData.visible : true,
+            date: newData?.date || new Date().toISOString().split('T')[0],
+            isExample: String(newData?.isExample || false) // Конвертируем в строку
         };
 
         console.log('Sending to server:', requestData);
         
         const response = await put(`/api/blocks/${id}`, requestData);
-        
-        if (!response.ok) {
-            const errorData = await response.json();
-            console.error('Server error response:', errorData);
-            throw new Error(errorData.message || 'Ошибка при обновлении блока');
-        }
-
-        const updatedBlock = await response.json();
+        const updatedBlock = response;
         console.log('Server response:', updatedBlock);
         
         if (updatedBlock) {
@@ -187,14 +187,14 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
                     block.id === id ? {
                         ...block,
                         ...updatedBlock,
-                        type: (updatedBlock.Type || updatedBlock.type || '').toLowerCase(),
-                        title: updatedBlock.Title || updatedBlock.title || '',
-                        content: typeof updatedBlock.Content === 'string' ? 
-                            safeParse(updatedBlock.Content) : 
+                        type: (updatedBlock.type || '').toLowerCase(),
+                        title: updatedBlock.title || '',
+                        content: typeof updatedBlock.content === 'string' ? 
+                            safeParse(updatedBlock.content) : 
                             (updatedBlock.content || {}),
-                        visible: updatedBlock.Visible ?? updatedBlock.visible ?? true,
-                        date: updatedBlock.Date || updatedBlock.date || new Date().toISOString().split('T')[0],
-                        isExample: updatedBlock.IsExample ?? updatedBlock.isExample ?? false
+                        visible: updatedBlock.visible ?? true,
+                        date: updatedBlock.date || new Date().toISOString().split('T')[0],
+                        isExample: updatedBlock.isExample === 'true' || updatedBlock.isExample === true
                     } : block
                 )
             );
@@ -212,10 +212,8 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
 
   const removeBlock = async (id) => {
     try {
-      const response = await del(`/api/blocks/${id}`);
-      if (response.ok) {
-        setBlocks(blocks.filter(block => block.id !== id));
-      }
+      await del(`/api/blocks/${id}`);
+      setBlocks(blocks.filter(block => block.id !== id));
     } catch (e) {
       console.error("Ошибка удаления блока:", e);
     }

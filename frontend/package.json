@@ -23,6 +23,7 @@
     "@eslint/js": "^8.56.0",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.4.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
