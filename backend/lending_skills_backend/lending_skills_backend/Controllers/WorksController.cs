@@ -25,13 +25,15 @@ namespace lending_skills_backend.Controllers
             UsersRepository usersRepository,
             ProgramsRepository programsRepository,
             TagsRepository tagsRepository,
-            SkillsRepository skillsRepository)
+            SkillsRepository skillsRepository,
+            ApplicationDbContext context)
         {
             _worksRepository = worksRepository;
             _usersRepository = usersRepository;
             _programsRepository = programsRepository;
             _tagsRepository = tagsRepository;
             _skillsRepository = skillsRepository;
+            _context = context;
         }
 
         [HttpPost("GetWorks")]

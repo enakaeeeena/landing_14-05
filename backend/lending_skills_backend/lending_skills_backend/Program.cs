@@ -89,7 +89,11 @@ builder.Services.AddControllers();
 
 
 // === DI и база данных ===
-builder.Services.AddScoped<ApplicationDbContext>();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
 builder.Services.AddScoped<UsersRepository>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<EmailService>();
@@ -97,14 +101,6 @@ builder.Services.AddSingleton<EmailConfirmationStore>();
 builder.Services.AddScoped<PasswordResetService>();
 builder.Services.AddScoped<EmailConfirmationRepository>();
 builder.Services.AddScoped<BlocksRepository>();
-
-
-
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
 // Configure form options
 builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(options =>

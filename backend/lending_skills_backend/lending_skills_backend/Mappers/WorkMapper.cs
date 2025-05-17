@@ -8,11 +8,11 @@ public static class WorkMapper
     {
         return new Work
         {
-            Id = dbWork.Id,
+            Id = dbWork.Id.GetHashCode(),
             Title = dbWork.Name,
             Description = dbWork.WorkDescription,
             Image = dbWork.MainPhotoUrl,
-            IsFeatured = dbWork.IsFeatured,
+            IsFeatured = dbWork.Favorite,
             CreatedAt = dbWork.PublishDate,
             Author = dbWork.User?.FirstName + " " + dbWork.User?.LastName
         };
@@ -22,11 +22,11 @@ public static class WorkMapper
     {
         return new DbWork
         {
-            Id = work.Id,
+            Id = Guid.NewGuid(),
             Name = work.Title,
             WorkDescription = work.Description,
             MainPhotoUrl = work.Image,
-            IsFeatured = work.IsFeatured,
+            Favorite = work.IsFeatured,
             PublishDate = work.CreatedAt
         };
     }

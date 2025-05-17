@@ -8,12 +8,12 @@ public static class ReviewMapper
     {
         return new Review
         {
-            Id = dbReview.Id,
+            Id = dbReview.Id.GetHashCode(),
             AuthorName = dbReview.User?.FirstName + " " + dbReview.User?.LastName,
             AuthorTitle = dbReview.User?.Role,
             AuthorImage = "", // TODO: Add user image if needed
             Content = dbReview.Content,
-            IsFeatured = dbReview.IsFeatured,
+            IsFeatured = dbReview.IsSelected,
             CreatedAt = dbReview.CreatedDate
         };
     }
@@ -22,9 +22,9 @@ public static class ReviewMapper
     {
         return new DbReview
         {
-            Id = review.Id,
+            Id = Guid.NewGuid(),
             Content = review.Content,
-            IsFeatured = review.IsFeatured,
+            IsSelected = review.IsFeatured,
             CreatedDate = review.CreatedAt
         };
     }

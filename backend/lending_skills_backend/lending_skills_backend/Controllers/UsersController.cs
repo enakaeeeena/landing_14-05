@@ -21,11 +21,13 @@ namespace lending_skills_backend.Controllers
         public UsersController(
             UsersRepository usersRepository,
             ProgramsRepository programsRepository,
-            SkillsRepository skillsRepository)
+            SkillsRepository skillsRepository,
+            ApplicationDbContext context)
         {
             _usersRepository = usersRepository;
             _programsRepository = programsRepository;
             _skillsRepository = skillsRepository;
+            _context = context;
         }
 
         // GetProfiles метод

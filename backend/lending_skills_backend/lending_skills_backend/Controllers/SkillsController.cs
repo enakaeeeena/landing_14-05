@@ -4,6 +4,7 @@ using lending_skills_backend.Mappers;
 using lending_skills_backend.Models;
 using lending_skills_backend.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using lending_skills_backend.DataAccess;
 
 namespace lending_skills_backend.Controllers
 {
@@ -15,17 +16,20 @@ namespace lending_skills_backend.Controllers
         private readonly WorksRepository _worksRepository;
         private readonly UsersRepository _usersRepository;
         private readonly ProgramsRepository _programsRepository;
+        private readonly ApplicationDbContext _context;
 
         public SkillsController(
             SkillsRepository skillsRepository,
             WorksRepository worksRepository,
             UsersRepository usersRepository,
-            ProgramsRepository programsRepository)
+            ProgramsRepository programsRepository,
+            ApplicationDbContext context)
         {
             _skillsRepository = skillsRepository;
             _worksRepository = worksRepository;
             _usersRepository = usersRepository;
             _programsRepository = programsRepository;
+            _context = context;
         }
 
         [HttpGet("GetSkills")]

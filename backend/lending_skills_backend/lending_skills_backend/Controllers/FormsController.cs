@@ -14,12 +14,14 @@ namespace lending_skills_backend.Controllers
     public class FormsController : ControllerBase
     {
         private readonly FormsRepository _formsRepository;
-
+        private readonly ApplicationDbContext _context;
 
         public FormsController(
-            FormsRepository formsRepository)
+            FormsRepository formsRepository,
+            ApplicationDbContext context)
         {
             _formsRepository = formsRepository;
+            _context = context;
         }
 
         [HttpPost("AddForm")]
