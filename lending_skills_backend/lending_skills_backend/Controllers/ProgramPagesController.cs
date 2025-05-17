@@ -148,56 +148,48 @@ namespace lending_skills_backend.Controllers
                     return BadRequest(new { error = "Request cannot be null" });
                 }
 
+                Console.WriteLine($"Received EditBlock request: {System.Text.Json.JsonSerializer.Serialize(request)}");
+
                 var block = await _blocksRepository.GetBlockByIdAsync(request.id);
                 if (block == null)
                 {
                     return NotFound(new { error = "Block not found" });
                 }
 
-                var page = await _context.Pages
-                    .Include(p => p.Program)
-                    .FirstOrDefaultAsync(p => p.Id == block.PageId);
-                if (page == null)
-                {
-                    return NotFound(new { error = "Page not found" });
-                }
-
-                // Проверка прав админа 
-                var userId = Guid.NewGuid(); // Заменить на реальный UserId
-                if (!await _programsRepository.IsAdminOfProgramAsync(userId, page.ProgramId))
-                {
-                    return Forbid("User is not an admin of this program.");
-                }
-
                 try
                 {
-                    UpdateDbBlockMapper.Map(block, request);
+                    // Validate content size
+                    if (request.content != null && request.content.Length > 1000000) // 1MB limit
+                    {
+                        return BadRequest(new { error = "Content size exceeds maximum allowed size" });
+                    }
+
+                    // Update block fields
+                    block.Type = request.type?.ToLower() ?? block.Type;
+                    block.Title = request.title ?? block.Title;
+                    block.Content = request.content ?? block.Content;
+                    block.Visible = request.visible ?? block.Visible;
+                    block.Date = request.date ?? block.Date;
+                    block.IsExample = request.isExample ?? block.IsExample;
+                    block.UpdatedAt = DateTime.UtcNow;
+
+                    Console.WriteLine($"Updating block with values: {System.Text.Json.JsonSerializer.Serialize(block)}");
+
                     await _blocksRepository.UpdateBlockAsync(block);
-                    return NoContent();
-                }
-                catch (InvalidOperationException ex)
-                {
-                    Console.WriteLine($"Validation error while updating block {request.id}: {ex.Message}");
-                    return BadRequest(new { error = ex.Message });
-                }
-                catch (DbUpdateException dbEx)
-                {
-                    Console.WriteLine($"Database error while updating block {request.id}: {dbEx.Message}");
-                    Console.WriteLine($"Inner exception: {dbEx.InnerException?.Message}");
-                    return StatusCode(500, new { error = "Failed to save changes to database" });
+                    return Ok(new { message = "Block updated successfully", block = block });
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error while updating block {request.id}: {ex.Message}");
+                    Console.WriteLine($"Error updating block {request.id}: {ex.Message}");
                     Console.WriteLine($"Stack trace: {ex.StackTrace}");
-                    return StatusCode(500, new { error = "An unexpected error occurred while updating the block" });
+                    return StatusCode(500, new { error = "Failed to update block", details = ex.Message });
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Critical error in EditBlock: {ex.Message}");
                 Console.WriteLine($"Stack trace: {ex.StackTrace}");
-                return StatusCode(500, new { error = "A critical error occurred while processing your request" });
+                return StatusCode(500, new { error = "A critical error occurred", details = ex.Message });
             }
         }
 

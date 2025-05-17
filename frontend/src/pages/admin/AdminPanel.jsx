@@ -163,49 +163,41 @@ const AdminPanel = ({ headerLinks, setHeaderLinks }) => {
     try {
         console.log('Updating block with data:', newData);
         
-        // Форматируем данные для сервера
+        // Format data according to backend model requirements
         const requestData = {
             id: id,
-            type: (newData?.type || '').toLowerCase(),
-            title: newData?.title || '',
-            content: typeof newData?.content === 'object' ? JSON.stringify(newData.content) : (newData?.content || '{}'),
-            visible: typeof newData?.visible === 'boolean' ? newData.visible : true,
-            date: newData?.date || new Date().toISOString().split('T')[0],
-            isExample: String(newData?.isExample || false) // Конвертируем в строку
+            type: (newData.type || '').toLowerCase(),
+            title: newData.title || '',
+            content: typeof newData.content === 'object' ? JSON.stringify(newData.content) : newData.content || '{}',
+            visible: newData.visible ?? true,
+            date: newData.date || new Date().toISOString().split('T')[0],
+            isExample: String(newData.isExample || false)
         };
 
         console.log('Sending to server:', requestData);
         
-        const response = await put(`/api/blocks/${id}`, requestData);
-        const updatedBlock = response;
-        console.log('Server response:', updatedBlock);
-        
-        if (updatedBlock) {
-            // Обновляем блок в локальном состоянии
+        const response = await put('/api/ProgramPages/EditBlock', requestData);
+        console.log('Server response:', response);
+
+        if (response.ok) {
             setBlocks(prevBlocks => 
                 prevBlocks.map(block => 
                     block.id === id ? {
                         ...block,
-                        ...updatedBlock,
-                        type: (updatedBlock.type || '').toLowerCase(),
-                        title: updatedBlock.title || '',
-                        content: typeof updatedBlock.content === 'string' ? 
-                            safeParse(updatedBlock.content) : 
-                            (updatedBlock.content || {}),
-                        visible: updatedBlock.visible ?? true,
-                        date: updatedBlock.date || new Date().toISOString().split('T')[0],
-                        isExample: updatedBlock.isExample === 'true' || updatedBlock.isExample === true
+                        ...newData,
+                        content: typeof newData.content === 'string' ? 
+                            safeParse(newData.content) : 
+                            newData.content,
+                        isExample: String(newData.isExample || false)
                     } : block
                 )
             );
             return true;
+        } else {
+            throw new Error(response.data?.error || 'Failed to update block');
         }
-        return false;
     } catch (error) {
         console.error('Ошибка обновления блока:', error);
-        if (error.response) {
-            console.error('Ответ сервера:', error.response.data);
-        }
         throw error;
     }
   };

@@ -8,7 +8,7 @@ interface AddBlockToPageRequest {
   pageId: string;
   data: string;
   isExample: string;
-  type: number;
+  type: string;
   afterBlockId?: string | null;
 }
 

@@ -9,9 +9,9 @@ public class AddBlockToPageRequestValidator : AbstractValidator<AddBlockToPageRe
     public AddBlockToPageRequestValidator()
     {
         // Правила валидации для запроса добавления блока на страницу
-        RuleFor(x => x.pageId).NotEmpty().WithMessage("Идентификатор страницы обязателен.");
-        RuleFor(x => x.data).NotEmpty().WithMessage("Данные блока обязательны.");
-        RuleFor(x => x.isExample).NotEmpty().WithMessage("Флаг примера обязателен.");
-        RuleFor(x => x.type).NotEmpty().WithMessage("Тип блока обязателен.");
+        RuleFor(x => x.PageId).NotEmpty().WithMessage("Идентификатор страницы обязателен.");
+        RuleFor(x => x.Data).NotEmpty().WithMessage("Данные блока обязательны.");
+        RuleFor(x => x.IsExample).NotEmpty().WithMessage("Флаг примера обязателен.");
+        RuleFor(x => x.Type).NotEmpty().WithMessage("Тип блока обязателен.");
     }
 }

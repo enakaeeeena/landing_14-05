@@ -3030,6 +3030,7 @@
       },
       "EditBlockRequest": {
         "required": [
+          "content",
           "date",
           "id",
           "isExample",
@@ -3051,8 +3052,8 @@
             "type": "string"
           },
           "content": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "visible": {
             "type": "boolean",

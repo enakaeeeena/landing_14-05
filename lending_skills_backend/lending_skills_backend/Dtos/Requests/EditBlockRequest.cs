@@ -13,6 +13,7 @@ public class EditBlockRequest
     [Required(ErrorMessage = "Title is required")]
     public string title { get; set; }
 
+    [Required(ErrorMessage = "Content is required")]
     public string content { get; set; }
 
     public bool? visible { get; set; }

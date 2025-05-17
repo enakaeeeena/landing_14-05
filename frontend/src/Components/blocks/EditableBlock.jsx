@@ -178,9 +178,9 @@ const EditableBlock = ({ block, onSave, onDelete, onToggleVisibility, onMoveUp, 
     const updatedBlock = {
       id: block.id,
       type: block.type.toLowerCase(),
-      title: block.title,
+      title: block.title || '',
       content: typeof content === 'string' ? content : JSON.stringify(content),
-      visible: block.visible,
+      visible: block.visible ?? true,
       date: block.date || new Date().toISOString().split('T')[0],
       isExample: (block.isExample || "false").toString()
     };
